@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UsuarioClient {
 
     //buscar onde o findByEmail está buscando na API usuario
-    @GetMapping("/Usuario")
+    @GetMapping("/usuario")
     UsuarioDTO buscarUsuarioPorEmail(@RequestParam("email") String email,
                                      @RequestHeader("Authorization") String token);
 
